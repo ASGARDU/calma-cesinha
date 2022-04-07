@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+html {
+    font-family: Roboto;
+}
+
+.middleContainer {
+    margin: 32px auto;
+    width: 60%;
+    text-align: center;
+}
+
+img {
+    width: 30%;
+    border-radius: 13px;
+    -webkit-box-shadow: -1px 19px 17px -3px rgba(0,0,0,0.54); 
+    box-shadow: -1px 19px 17px -3px rgba(0,0,0,0.54);
+}
+
+.countdownContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.counter {
+    margin: 0 32px;
+    width: 5%;
+    /* margin: 0 auto; */
+    padding: 82px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.4px);
+    -webkit-backdrop-filter: blur(1.4px);
+    border: 1px solid rgba(255, 255, 255, 0.54);
+}
