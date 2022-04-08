@@ -47,9 +47,9 @@ function App() {
         }
         {
           (remainingDays >  0 && remainingHours > 0 && remainingMinutes > 0) ?
-          <img src={CesinhaImg}/>
+          <img src={CesinhaImg} draggable={false} className={styles.clickable} onClick={() => angryCesinhaAudio.play()}/>
           :
-          <img src={CesinhaBraboImg} />
+          <img src={CesinhaBraboImg} draggable={false} />
         }
       </nav>
       <section className={styles.flex}>
