@@ -13,7 +13,7 @@ function App() {
 
   const date = {
     todayDate: moment(moment().format("YYYY-MM-DD h:m")).locale("pt-br"),
-    nextFriday: moment(moment().day("Friday").format("YYYY-MM-DD 18:00")).locale("pt-br")
+    nextFriday: moment(moment().day(5).format("YYYY-MM-DD 6:00")).locale("pt-br")
   }
 
   const [angryCesinhaAudio, setCesinhaAudio] = useState(new Audio(CesinhaAudio))
@@ -84,10 +84,10 @@ function App() {
           </div>
         </section>
         {
-          (remainingDays > 0 && remainingHours > 0 && remainingMinutes > 0) ?
-          <h1>Para sexta feira 18:00!</h1>
-          :
+          (remainingDays <=  0 && remainingHours <= 0 && remainingMinutes <= 0) ?
           ""
+          :
+          <h1>Para sexta feira 18:00!</h1>
         }
       </section>
       {
