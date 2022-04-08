@@ -17,18 +17,22 @@ img {
     box-shadow: -1px 19px 17px -3px rgba(0,0,0,0.54);
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 .countdownContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap
 }
 
 .counter {
     margin: 0 32px;
     width: 5%;
-    /* margin: 0 auto; */
     padding: 82px;
     display: flex;
     flex-direction: column;
