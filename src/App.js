@@ -46,10 +46,10 @@ function App() {
 
         }
         {
-          (remainingDays >  0 && remainingHours > 0 && remainingMinutes > 0) ?
-          <img src={CesinhaImg} draggable={false} className={styles.clickable} onClick={() => angryCesinhaAudio.play()}/>
-          :
+          (remainingDays <=  0 && remainingHours <= 0 && remainingMinutes <= 0) ?
           <img src={CesinhaBraboImg} draggable={false} />
+          :
+          <img src={CesinhaImg} draggable={false} className={styles.clickable} onClick={() => angryCesinhaAudio.play()}/>
         }
       </nav>
       <section className={styles.flex}>
@@ -58,10 +58,10 @@ function App() {
           Your browser does not support the audio element.
         </audio> 
         {
-          (remainingDays >  0 && remainingHours > 0 && remainingMinutes > 0) ?
-          <h1>Ainda falta</h1>
-          :
+          (remainingDays <=  0 && remainingHours <= 0 && remainingMinutes <= 0) ?
           <h1>Aproveita!</h1>
+          :
+          <h1>Ainda falta</h1>
         }
         <section className={styles.countdownContainer}>
           <div>
